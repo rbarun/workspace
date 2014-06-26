@@ -1,0 +1,16 @@
+/*
+ * Adharsh Babu
+ * Rock Paper Scissors Program
+ */
+
+import java.lang.Math;
+
+public class RockPaperScissors {
+
+	public static void main(String[] args) {
+	
+		int random = (int) ((3)*Math.random() + 1);
+System.out.println(random);
+	}
+
+}

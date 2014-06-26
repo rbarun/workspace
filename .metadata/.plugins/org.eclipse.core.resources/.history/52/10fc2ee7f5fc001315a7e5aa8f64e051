@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Exponentiation {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		 System.out.println("Enter a base number to raise it to the nth power: ");
+		 double base = input.nextDouble();
+		 
+		 System.out.println("Enter a power to raise this base to: ");
+		 double power = input.nextDouble();
+		
+		double answer = powerOf(base,power);
+		System.out.println(base + " raised to the " + power + " power = " + answer);
+	}
+	
+	
+	 public static double powerOf(double base, double power) {
+		 		 
+		 double sumOfValues = base;
+		 System.out.println("sumOfValues: " + sumOfValues);
+		 System.out.println("base: " + base);
+		 System.out.println("***********************");
+		 for (int x = (int) power; x <= (int) power ; x++) {
+			 sumOfValues *= base;
+			 System.out.println("sumOfValues: " + sumOfValues);
+			 System.out.println("base: " + base);
+		 }
+		 return (sumOfValues);
+	 }
+}

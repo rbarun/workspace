@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public abstract class TrigFunctions {
+
+	public static void main(String[] args) {
+	System.out.println("TrigFunction Program");
+	System.out.println("Enter an Angle in Degrees: ");
+	
+	Scanner input = new Scanner(System.in);
+	double degrees = input.nextDouble();
+	degrees = Math.toRadians(degrees);
+	
+	System.out.println("Sin: " + Math.sin(degrees));
+	System.out.println("Cos: " + Math.cos(degrees));
+	System.out.println("Tan: " + Math.tan(degrees));
+
+	}
+
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class AverageValue {
+
+	public static void main(String[] args) {
+		
+		int numValue = 0;
+		int sumOfValues = 0;
+		Scanner input = new Scanner(System.in);
+		
+		int newValue = 0;
+		while (newValue != -10){
+			numValue ++;
+			newValue = input.nextInt(); 
+			sumOfValues += newValue;
+			
+}
+}
+}

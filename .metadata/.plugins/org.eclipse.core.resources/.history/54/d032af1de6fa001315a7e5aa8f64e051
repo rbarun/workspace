@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class PerfectSquare {
+
+	public static void main(String[] args) {
+
+		System.out.println("Perfect Square Progam");
+		Scanner input = new Scanner(System.in);
+		System.out.println("Is This Number A Perfect Square?: ");
+		
+		int number = input.nextInt();
+		double sqrtnmbr = Math.sqrt(number);
+		
+		if (Math.pow(sqrtnmbr,2) == number) {
+	System.out.println("Yes, this is a perfect square!");
+		}else{
+		System.out.println("No, this is not a perfect square!");
+		}
+	}
+
+}

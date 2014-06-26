@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class InverseTrigFunctions {
+
+	public static void main(String[] args) {
+		
+		System.out.println("InverseTrigFunctions Program");
+		System.out.println("Enter the Angle in Degrees: ");
+		
+		Scanner input = new Scanner(System.in);
+		double degrees = input.nextDouble();
+		
+		System.out.println("Arcsin: " + Math.asin(degrees));
+		System.out.println("Arccos: " + Math.acos(degrees));
+		System.out.println("Arctan: " + Math.atan(degrees));
+	}
+
+}

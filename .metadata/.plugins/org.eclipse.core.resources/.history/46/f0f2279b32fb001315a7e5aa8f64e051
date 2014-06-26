@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class AverageValue {
+
+	public static void main(String[] args) {
+		
+		int done = 0;
+		int numValue = 0;
+		int sumOfValues = 0;
+		Scanner input = new Scanner(System.in);
+		
+		int newValue = 0;
+		while (newValue != done){
+			System.out.println("Enter Value to Be Averaged [Enter \"done\" if done]: ");
+			numValue ++;
+System.out.println("*********numValue: " + numValue);
+			newValue = input.nextInt(); 
+//System.out.println("*********newValue: " + newValue);
+			sumOfValues += newValue;
+//System.out.println("*********sumOfValues: " + sumOfValues);
+			
+		}
+		double avg = (double)sumOfValues/(double)numValue;
+		System.out.println("Average of Given Values: " + avg);
+	}
+}

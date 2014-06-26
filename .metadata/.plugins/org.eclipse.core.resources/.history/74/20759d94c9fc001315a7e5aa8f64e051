@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		int sumOfValues;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a number to calculate its factorial");
+		int number = input.nextInt();
+		if (number < 0 ) {
+		System.out.println("Cannot Calculate \"Negative\" Factorials");	
+		}else{
+		
+			for (int x = 0; x <= number ; x++) {
+				sumOfValues = number*(number-x);
+				System.out.println("Value Each Iteration: " + sumOfValues);
+	}
+	}
+}
+}
+
+
+
